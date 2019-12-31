@@ -1,0 +1,48 @@
+<div class=" wrap-login100 txt1">
+    <div class="row row1 m-0 p-0">
+        <a href="/profile" class="text-left">
+            <img src="{{image.path}}" alt="{{image.filename}}" height="20px" width="20px">
+        </a>
+
+        <span class="col1 text-center m-l-60">
+            ToDo List
+        </span>
+    </div>
+
+
+    <div class="row row3 m-0 txt1">
+        <div class="col m-0">
+            {{> add}}
+        </div>
+    </div>
+
+
+    <div class="row row4 scrollbar mx-0 tasker-body">
+
+        <ul class="list-group list-group-flush list mx-0 clearfix item uli" id="incompleteTasks">
+
+            {{#each todos}}
+            {{> todo this}}
+
+            {{else}}
+            <div class="center mx-auto img1">
+                <img src="images/zero-state.svg" alt="zero=state" height="250px" width="250px">
+                <p class="center">Anything to add?</p>
+            </div>
+
+            {{/each}}
+
+        </ul>
+        <ul class="list-group list-group-flush list clearfix" id="completedTasks"></ul>
+
+    </div>
+
+
+    <div class="col">
+        <nav class="navbar navbar-dark bg-dark fixed-bottom navb">
+            <a class="navbar-brand" href="#"><i class="fas fa-user"></i></a>
+            <a class="navbar-brand" href="#"><i class="fas fa-plus-circle addicon2"></i></a>
+            <a class="navbar-brand" href="#"><i class="fas fa-calendar-alt"></i></a>
+        </nav>
+    </div>
+</div>

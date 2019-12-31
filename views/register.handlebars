@@ -1,0 +1,48 @@
+<div class="wrap-login100 p-l-30 p-r-30 p-t-30 p-b-30">
+  <form class="login100-form m-0" action="/users/register" method="POST" novalidate>
+    <span class="login100-form-title p-b-30">
+      Register
+    </span>
+
+    <div class="wrap-input100 validate-input m-b-15" data-validate="Username is required">
+      <label for="validationServer01">Username</label>
+      <input type="text" class="input100" name="name" value="{{name}}" placeholder="Type a Username" required>
+      <span class="focus-input100" data-symbol="&#xf206;"></span>
+    </div>
+
+    <div class="wrap-input100 validate-input m-b-15" data-validate="Email is required">
+      <span class="label-input100">Email</span>
+      <input type="email" name="email" class="input100" value="{{email}}" placeholder="Type valid email" required>
+      <span class="focus-input100" data-symbol="&#xf206;"></span>
+    </div>
+
+    <div class="wrap-input100 validate-input m-b-15" data-validate="Password is required">
+      <span class="label-input100">Password</span>
+      <input type="password" name="password" class="input100" value="{{password}}" placeholder="Password" required>
+      <span class="focus-input100" data-symbol="&#xf190;"></span>
+    </div>
+
+    <div class="wrap-input100 validate-input m-b-15" data-validate="Password is required">
+      <span class="label-input100">Password</span>
+      <input type="password" name="password2" class="input100" value="{{password2}}" placeholder="Confirm password" required>
+      <span class="focus-input100" data-symbol="&#xf190;"></span>
+    </div>
+
+    <div class="container-login100-form-btn">
+      <div class="wrap-login100-form-btn">
+        <div class="login100-form-bgbtn"></div>
+        <button class="login100-form-btn">
+          Register
+        </button>
+      </div>
+
+    </div>
+
+    <div class="flex-col-c p-t-30">
+      <span>
+        Already an account? <a href="/users/login">Login</a>
+      </span>
+    </div>
+  </form>
+
+</div>
